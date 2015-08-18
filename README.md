@@ -6,7 +6,7 @@ position inside a ruby module/class.
 
 ## Installation
 
-I recommend Vundle:
+I recommend [Vundle](https://github.com/VundleVim/Vundle.vim)
 
     Plugin 'codegourmet/ruby-yank-fqn'
 
@@ -58,12 +58,15 @@ you might want to change the target register.
 
     let g:yankfqn_register = '*'
 
-Default: `"` (unnamed yanked register)
+Default: `"` (unnamed yank register)
 
 ### g:yankfqn_verbose
 If this flag is set to 1, the yanked string will be output as message.
 
 Default: `0`
+
+## Contributing
+If you think anything's missing or buggy, please drop me a line or a pull request.
 
 ## TODO
 
