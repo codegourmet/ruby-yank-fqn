@@ -35,6 +35,21 @@ if you press `yf` (or your custom combination, see above) at
 the marked cursor position, the string `Foo::Class2`
 will get yanked into the unnamed register (@").
 
+NOTE: you can yank from any position. If the cursor is on a `class`,
+`module` or `end` statement, it will still count as being inside the scope.
+
+example:
+
+```
+  module Foo
+    class Class1
+    end
+    # ^-- cursor is on the end statement
+  end
+```
+
+will yield `Foo::Class1`
+
 ## Settings
 
 ### g:yankfqn_register
