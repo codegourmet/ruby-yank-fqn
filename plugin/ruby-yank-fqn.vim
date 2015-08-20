@@ -5,7 +5,7 @@ if ! exists("g:yankfqn_register")
 	let g:yankfqn_register = '"'
 end
 if ! exists("g:yankfqn_verbose")
-	let g:yankfqn_register = 0
+	let g:yankfqn_verbose = 0
 end
 
 function YFQN_IsEndStatement(line_nr)
