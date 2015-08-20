@@ -1,6 +1,11 @@
 " configuration example:
 " nmap yf :call YankFQN()<CR>
 
+if exists('g:loaded_YFQN')
+	finish
+endif
+let g:loaded_YFQN = 1
+
 if ! exists("g:yankfqn_register")
 	let g:yankfqn_register = '"'
 end
