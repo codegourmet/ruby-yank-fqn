@@ -8,16 +8,16 @@ if ! exists("g:yankfqn_verbose")
 	let g:yankfqn_verbose = 0
 end
 
-function YFQN_IsEndStatement(line_nr)
+function! YFQN_IsEndStatement(line_nr)
 	let line = getline(a:line_nr)
 	return match(line, '^\s*\(end\)\(\s|#\)*.*$') > -1
 endfunction
 
-function YFQN_SearchPosPrevClassDef()
+function! YFQN_SearchPosPrevClassDef()
 	return searchpos('^\s*\(module\|class\)\s', 'bW')
 endfunction
 
-function YFQN_GetClassName(line_nr)
+function! YFQN_GetClassName(line_nr)
 	let line = getline(a:line_nr)
 	let m = matchlist(line, '^\s*\(module\|class\)\s\(\S\+\)')
 
@@ -29,7 +29,7 @@ function YFQN_GetClassName(line_nr)
 	return result
 endfunction
 
-function YFQN_MoveToPrevNonBlank(line_nr)
+function! YFQN_MoveToPrevNonBlank(line_nr)
 	let line_nr = prevnonblank(a:line_nr)
 	call setpos('.', [0, line_nr, 0, 0])
 	return line_nr
