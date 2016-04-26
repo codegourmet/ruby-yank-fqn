@@ -1,4 +1,4 @@
 ruby-yank-fqn.txt*    Yank the FQN at the cursor position's scope.
 
 Author:  Markus Seeger <http://codegourmet.de/>
-License: Same terms as Vim itself
+License: MIT
