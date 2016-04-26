@@ -73,4 +73,4 @@ If you think anything's missing or buggy, please drop me a line or a pull reques
 vim docs
 
 ## License
-Same license as Vim.
+MIT
